@@ -26,7 +26,7 @@ def main():
     fig.savefig(sys_test.short_name+'.png')
 
     stile.WriteASCIITable('realshear.dat',results)
-    print "Done with unbinned systematics test"
+    print("Done with unbinned systematics test")
 
     # do with binning
     data = dh.getData(data_ids[0],'galaxy lens','single','field','table')
@@ -42,7 +42,7 @@ def main():
         stile.WriteASCIITable('realshear-'+bins_name+'.dat',results)
         fig = sys_test.plot(results)
         fig.savefig(sys_test.short_name+bins_name+'.png')
-        print "Done with binned systematics test", bins_name
+        print("Done with binned systematics test", bins_name)
 
 if __name__=='__main__':
     main()

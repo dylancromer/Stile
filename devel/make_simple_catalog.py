@@ -38,7 +38,7 @@ def main():
             g_total = g_induced+g_int
         else:
             g_total = g_int
-        print i, ra, dec, z, g_total.getG1(), g_total.getG2()
+        print(i, ra, dec, z, g_total.getG1(), g_total.getG2())
 
 if __name__=='__main__':
     main()

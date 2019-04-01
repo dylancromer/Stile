@@ -1178,7 +1178,7 @@ class StatSysTest(SysTest):
 
         # Print, if verbose=True.
         if verbose:
-            print(result.__str__())
+            print((result.__str__()))
 
         # Return.
         return result
